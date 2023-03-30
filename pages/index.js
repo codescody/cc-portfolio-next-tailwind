@@ -51,15 +51,15 @@ export default function Home() {
               Node.js, Python, Javascript, and Tailwind.
             </p>
           </div>
-          <div className="flex justify-center gap-16 py-3 text-black text-5xl">
-            <a href="/resume">
-              <Image className="h-12 w-12" src={projectIcon} />
+          <div className="flex justify-center items-center gap-8 py-3 text-black text-4xl">
+            <a className="flex flex-col justify-center items-center" href="/projects">
+            <p className="text-base font-medium">Projects</p><Image className="h-12 w-12" src={projectIcon} />
             </a>
-            <a href="https://www.linkedin.com/in/codycodes/" target="blank_">
-              <AiFillLinkedin />
+            <a className="flex flex-col justify-center items-center" href="https://www.linkedin.com/in/codycodes/" target="blank_">
+            <p className="text-base font-medium">LinkedIn</p><AiFillLinkedin className="h-12 w-12" />
             </a>
-            <a href="https://github.com/codescody" target="blank_">
-              <AiFillGithub />
+            <a className="flex flex-col justify-center items-center" href="https://github.com/codescody" target="blank_">
+            <p className="text-base font-medium">Github</p><AiFillGithub className="h-12 w-12" />
             </a>
           </div>
         </section>
