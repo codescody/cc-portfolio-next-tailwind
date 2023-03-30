@@ -2,8 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
+import projectIcon from "../public/startup.png";
+import profilePicture from "../public/profile.png";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,29 +17,51 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-black px-10">
+      <main className="bg-gray-800 px-10">
         <section className="min-h-screen">
           <nav className=" py-10 mb-12 flex justify-between">
-            <h1 className="text-xl">codedByCody</h1>
+            <h1 className="text-xl text-gray-100">codedByCody</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill className="cursor-point text-xl"/>
-                </li>
-              <li>
-                <a className="bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 rounded-md ml-8" href='#'>Resume</a>
-                </li>
+                <a
+                  className="bg-gradient-to-r from-cyan-400 to-teal-400 px-4 py-2 rounded-md ml-8"
+                  href="#"
+                >
+                  Resume
+                </a>
+              </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium">Cody Clark</h2>
-            <h3 className="text-2xl py-2">Software Developer</h3>
-            <p className="text-md py-5 leading- text-gray-800">Text Here</p>
+          <div className="flex flex-col justify-center items-center text-center p-10">
+            <Image
+              className="rounded-full h-56 w-56 mb-6"
+              src={profilePicture}
+            />
+            <h2 className="text-5xl py-2 text-teal-400 font-medium">
+              Cody Clark
+            </h2>
+            <h3 className="text-2xl py-2 text-gray-100">Software Developer</h3>
+            <p className="text-md w-6/12 py-5 leading-8 text-gray-100">
+              Hi I am Cody Clark a Software Developer. I have found my passion
+              building applications that provide innovative and practical
+              solutions to modern problems. I am committed to improving my
+              skills and consistently striving for collaboration, efficiency,
+              scalability, and maintainability. These are the frameworks I am
+              currently using MongoDB, PostgresSQL, Express, Next.js, React,
+              Node.js, Python, Javascript, and Tailwind.
+            </p>
           </div>
-          <div className="flex justify-center gap-16 py-3 text-gray-600 text-5xl">
-            <AiFillLinkedin />
-            <AiFillGithub />
+          <div className="flex justify-center gap-16 py-3 text-black text-5xl">
+            <a href="/resume">
+              <Image className="h-12 w-12" src={projectIcon} />
+            </a>
+            <a href="https://www.linkedin.com/in/codycodes/" target="blank_">
+              <AiFillLinkedin />
+            </a>
+            <a href="https://github.com/codescody" target="blank_">
+              <AiFillGithub />
+            </a>
           </div>
-          <div><img></img></div>
         </section>
       </main>
     </div>
