@@ -3,10 +3,8 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import codingIcon from "../public/coding.png";
-import resumeIcon from "../public/resume.png";
-import projectIcon from "../public/startup.png";
 import profilePicture from "../public/profile.png";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillFolder } from "react-icons/ai";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,8 +20,11 @@ export default function Home() {
       <main className="bg-gray-800 px-10">
         <section className="min-h-screen">
           <nav className=" py-10 mb-12 flex justify-between">
-            <h1 className="flex gap-2 text-xl text-gray-100"><Image className="w-8 h-8" src={codingIcon}/>codedByCody</h1>
-            <ul className="flex items-center">
+            <h1 className="flex gap-2 text-xl text-gray-100">
+              <Image className="w-8 h-8" src={codingIcon} />
+              codedByCody
+            </h1>
+            {/* <ul className="flex items-center">
               <li>
                 <a
                   className="bg-gradient-to-b from-cyan-500 to-teal-400 px-4 py-2 rounded-md ml-8"
@@ -32,7 +33,7 @@ export default function Home() {
                   Resume
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </nav>
           <div className="flex flex-col justify-center items-center text-center p-10">
             <Image
@@ -42,29 +43,44 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-400 font-medium">
               Cody Clark
             </h2>
-            <h3 className="text-2xl py-2 text-gray-100">Software Developer</h3>
+            <h3 className="text-2xl py-2 text-gray-100">
+              React and Next.js Software Developer
+            </h3>
             <p className="text-md w-6/12 py-5 leading-8 text-gray-100">
-              Hi I am Cody Clark a Software Developer. I have found my passion
-              building applications that provide innovative and practical
-              solutions to modern problems. I am committed to improving my
-              skills and consistently striving for collaboration, efficiency,
-              scalability, and maintainability. These are the frameworks I am
-              currently using MongoDB, PostgresSQL, Express, Next.js, React,
-              Node.js, Python, Javascript, and Tailwind.
+              Hi I'm Cody Clark a Software Developer and Photographer. After
+              years of professional travel and portrait photography experience I
+              turned my focus toward building visually stunning and practical
+              applications. I am committed to learning and consistently striving
+              for collaboration, efficiency, scalability, and maintainability.
+              These are the frameworks I am currently using MongoDB,
+              PostgresSQL, Express, Next.js, React, Node.js, Python, Javascript,
+              and Tailwind.
             </p>
           </div>
-          <div className="flex justify-center items-center gap-8 py-3 text-black text-4xl">
-            <a className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600 to-teal-400 px-4 py-2 rounded-md" href="/projects">
-            <p className="text-base font-medium">Projects</p><Image className="h-12 w-12" src={projectIcon} />
+          <div className="flex justify-center items-center gap-8 py-3 text-slate-900 text-4xl">
+            <a
+              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600 to-teal-400 px-4 py-2 rounded-md"
+              href="https://github.com/codescody"
+              target="blank_"
+            >
+              <p className="text-base font-medium">Resume</p>
+              <AiFillFolder className="h-12 w-12" />
             </a>
-            <a className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600 to-teal-400 px-4 py-2 rounded-md" href="https://github.com/codescody" target="blank_">
-            <p className="text-base font-medium">Resume</p><Image className="h-12 w-12" src={resumeIcon} />
+            <a
+              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600 to-teal-400 px-4 py-2 rounded-md"
+              href="https://www.linkedin.com/in/codycodes/"
+              target="blank_"
+            >
+              <p className="text-base font-medium">LinkedIn</p>
+              <AiFillLinkedin className="h-12 w-12" />
             </a>
-            <a className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600 to-teal-400 px-4 py-2 rounded-md" href="https://www.linkedin.com/in/codycodes/" target="blank_">
-            <p className="text-base font-medium">LinkedIn</p><AiFillLinkedin className="h-12 w-12" />
-            </a>
-            <a className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600 to-teal-400 px-4 py-2 rounded-md" href="https://github.com/codescody" target="blank_">
-            <p className="text-base font-medium">Github</p><AiFillGithub className="h-12 w-12" />
+            <a
+              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600 to-teal-400 px-4 py-2 rounded-md"
+              href="https://github.com/codescody"
+              target="blank_"
+            >
+              <p className="text-base font-medium">Github</p>
+              <AiFillGithub className="h-12 w-12" />
             </a>
           </div>
         </section>
