@@ -49,7 +49,7 @@ export default function Home() {
             <p className="text-md w-6/12 py-5 leading-8 text-gray-100">
               Hi I'm Cody Clark a Software Developer and Photographer. After
               years of professional travel and portrait photography experience I
-              turned my focus toward building visually stunning and practical
+              turned my focus toward building polished and practical
               applications. I am committed to learning and consistently striving
               for collaboration, efficiency, scalability, and maintainability.
               These are the frameworks I am currently using MongoDB,
@@ -59,15 +59,15 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center gap-8 py-3 text-slate-900 text-4xl">
             <a
-              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600 to-teal-400 px-4 py-2 rounded-md"
-              href="https://github.com/codescody"
+              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-700 to-teal-400 px-4 py-2 rounded-md"
+              href="https://docs.google.com/document/d/1GSbe3vbtxq2a8FyiBy8umS2kOadczfqCnU-2lyHOAh8/edit#heading=h.5rf9wr4r3no2"
               target="blank_"
             >
               <p className="text-base font-medium">Resume</p>
               <AiFillFolder className="h-12 w-12" />
             </a>
             <a
-              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600 to-teal-400 px-4 py-2 rounded-md"
+              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-700 to-teal-400 px-4 py-2 rounded-md"
               href="https://www.linkedin.com/in/codycodes/"
               target="blank_"
             >
@@ -75,13 +75,107 @@ export default function Home() {
               <AiFillLinkedin className="h-12 w-12" />
             </a>
             <a
-              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-600 to-teal-400 px-4 py-2 rounded-md"
+              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-700 to-teal-400 px-4 py-2 rounded-md"
               href="https://github.com/codescody"
               target="blank_"
             >
               <p className="text-base font-medium">Github</p>
               <AiFillGithub className="h-12 w-12" />
             </a>
+          </div>
+        </section>
+        <section className="min-h-screen">
+          <div className="h-96 mb-20">
+            <p className="block text-2xl mb-4">Languages and Frameworks</p>
+            <div className="flex gap-5">
+              <div>
+                <p className="text-sm text-center items-center">Javascript</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">HTML</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">CSS</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">MongoDB</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">Express</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">React</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">Node.js</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20 mb-1">Next.js</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">TailwindCSS</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">PostgresSQL</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20 mb-1">Django</p>
+                <svg className="h-20 w-20" viewBox="0 0 128 128">
+                  <path d="M59.448 0h20.93v96.88c-10.737 2.04-18.62 2.855-27.181 2.855-25.551-.001-38.87-11.551-38.87-33.705 0-21.338 14.135-35.2 36.015-35.2 3.398 0 5.98.272 9.106 1.087zm0 48.765c-2.446-.815-4.485-1.086-7.067-1.086-10.6 0-16.717 6.523-16.717 17.939 0 11.145 5.845 17.26 16.582 17.26 2.309 0 4.212-.136 7.202-.542z"></path>
+                  <path d="M113.672 32.321V80.84c0 16.717-1.224 24.735-4.893 31.666-3.398 6.661-7.883 10.873-17.124 15.494l-19.435-9.241c9.242-4.35 13.726-8.153 16.58-14 2.99-5.979 3.943-12.91 3.943-31.122V32.321zM92.742.111h20.93v21.474h-20.93z"></path>
+                </svg>
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">PostgresSQL</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="h-96">
+            <p className="inline-flex text-2xl">Skills and Applications</p>
           </div>
         </section>
       </main>
