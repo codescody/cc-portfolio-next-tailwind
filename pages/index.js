@@ -4,6 +4,9 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import codingIcon from "../public/coding.png";
 import profilePicture from "../public/profile.png";
+import ccPhoto from "../public/ccPhoto.png";
+import foodToMood from "../public/foodToMood.png";
+import snowpad from "../public/snowpad.png";
 import { AiFillGithub, AiFillLinkedin, AiFillFolder } from "react-icons/ai";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,7 +22,7 @@ export default function Home() {
       </Head>
       <main className="bg-gray-800 px-10">
         <section className="min-h-screen">
-          <nav className=" py-10 mb-12 flex justify-between">
+          <nav className=" py-10 mb-2 flex justify-between">
             <h1 className="flex gap-2 text-xl text-gray-100">
               <Image className="w-8 h-8" src={codingIcon} />
               codedByCody
@@ -35,7 +38,7 @@ export default function Home() {
               </li>
             </ul> */}
           </nav>
-          <div className="flex flex-col justify-center items-center text-center p-10">
+          <div className="flex flex-col justify-center items-center text-center p-8">
             <Image
               className="rounded-full h-56 w-56 mb-6"
               src={profilePicture}
@@ -57,9 +60,9 @@ export default function Home() {
               and Tailwind.
             </p>
           </div>
-          <div className="flex justify-center items-center gap-8 py-3 text-slate-900 text-4xl mb-8">
+          <div className="flex justify-center items-center gap-8 py-3 text-slate-900 text-4xl mb-10">
             <a
-              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-700 to-teal-400 px-4 py-2 rounded-md"
+              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-700 to-teal-300 px-4 py-2 rounded-md"
               href="https://docs.google.com/document/d/1GSbe3vbtxq2a8FyiBy8umS2kOadczfqCnU-2lyHOAh8/edit#heading=h.5rf9wr4r3no2"
               target="blank_"
             >
@@ -67,7 +70,7 @@ export default function Home() {
               <AiFillFolder className="h-12 w-12" />
             </a>
             <a
-              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-700 to-teal-400 px-4 py-2 rounded-md"
+              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-700 to-teal-300 px-4 py-2 rounded-md"
               href="https://www.linkedin.com/in/codycodes/"
               target="blank_"
             >
@@ -75,7 +78,7 @@ export default function Home() {
               <AiFillLinkedin className="h-12 w-12" />
             </a>
             <a
-              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-700 to-teal-400 px-4 py-2 rounded-md"
+              className="flex flex-col justify-center items-center bg-gradient-to-t from-cyan-700 to-teal-300 px-4 py-2 rounded-md"
               href="https://github.com/codescody"
               target="blank_"
             >
@@ -84,9 +87,9 @@ export default function Home() {
             </a>
           </div>
         </section>
-        <section className="h-fit">
-          <div className="mb-8">
-            <p className="block text-2xl mb-8">Languages and Frameworks</p>
+        <section className="h-fit p-2">
+          <div className="mb-10">
+            <h2 className="block text-2xl mb-10">Languages and Frameworks</h2>
             <div className="flex gap-5 flex-wrap">
               <div>
                 <p className="text-sm text-center items-center">Javascript</p>
@@ -166,7 +169,7 @@ export default function Home() {
                 </svg>
               </div>
               <div>
-                <p className="text-sm text-center w-20">PostgresSQL</p>
+                <p className="text-sm text-center w-20">Python</p>
                 <img
                   className="h-20 w-20"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
@@ -175,64 +178,136 @@ export default function Home() {
             </div>
           </div>
           <div className="pb-8">
-            <p className="inline-flex text-2xl mb-8">Skills and Applications</p>
+            <h2 className="inline-flex text-2xl mb-10">
+              Skills and Applications
+            </h2>
             <div className="flex gap-5 flex-wrap">
-            <div>
-            <p className="text-sm text-center w-20">VS Code</p>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
-            </div>
-            <div>
-            <p className="text-sm text-center w-20">Github</p>
-            <svg className="h-20 w-20" viewBox="0 0 128 128">
-            <g fill="#181616"><path fill-rule="evenodd" clip-rule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"></path><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path></g>
-            </svg>
-            </div>
-          <div>
-            <p className="text-sm text-center w-20">Git</p>
-            <img className="h-20 w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-            </div>
-            <div>
-            <p className="text-sm text-center w-20">Slack</p>
-            <img className="h-20 w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" />
-            </div>
-            <div>
-            <p className="text-sm text-center w-20">Jira</p>
-            <img className="h-20 w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" />
-            </div>
-            <div>
-            <p className="text-sm text-center w-20">Trello</p>
-            <img className="h-20 w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" />
-            </div>
-            <div>
-            <p className="text-sm text-center w-20">Figma</p>
-            <img className="h-20 w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
-            </div>
-            <div>
-            <p className="text-sm text-center w-20">Webflow</p>
-            <img className="h-20 w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg" />
-            </div>
-            <div>
-            <p className="text-sm text-center w-20">Blender</p>
-            <img className="h-20 w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" />
-            </div>
-            <div>
-            <p className="text-sm text-center w-20">Photoshop</p>
-            <img className="h-20 w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
-            </div>
-            <div>
-            <p className="text-sm text-center w-20">Premiere</p>
-            <img className="h-20 w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-plain.svg" />
-            </div>
-            <div>
-            <p className="text-xs text-center w-20 font-medium">After Effects</p>
-            <img className="h-20 w-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg" />
-            </div>
-          
-          
-
+              <div>
+                <p className="text-sm text-center w-20">VS Code</p>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">Github</p>
+                <svg className="h-20 w-20" viewBox="0 0 128 128">
+                  <g fill="#181616">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
+                    ></path>
+                    <path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path>
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">Git</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">Slack</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">Jira</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">Trello</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">Figma</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">Webflow</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">Blender</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">Photoshop</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                />
+              </div>
+              <div>
+                <p className="text-sm text-center w-20">Premiere</p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-plain.svg"
+                />
+              </div>
+              <div>
+                <p className="text-xs text-center w-20 font-medium">
+                  After Effects
+                </p>
+                <img
+                  className="h-20 w-20"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg"
+                />
+              </div>
             </div>
           </div>
         </section>
+        <section>
+          <div className="h-fit p-8">
+            <h2 className="flex justify-center align items-center text-left text-3xl mb-10">
+              Projects
+            </h2>
+            <div>
+              <h4 className="mb-4">Cody Clark Photography</h4>
+              <Image className="mb-4" src={ccPhoto} />
+              <p className="mb-4">
+                This is a full stack application I created as a way to showcase
+                some of my favorite photography work. I used React, MongoDB
+                Express, and Tailwind CSS for this project. The goal for with
+                this site was to show previous work experience while practicing
+                a new skill, TailwindCSS. TailwindCSS is now one of my favorite
+                intuitive frameworks to style in React.
+              </p>
+            </div>
+            <div>
+              <h4 className="mb-4">Snowpad</h4>
+              <Image className="mb-4" src={snowpad} />
+              <p className="mb-4">
+                Snowpad is my first time working with a group of developers. We decided to find an interesting thing to sell that was fun and unique. We wanted to demonstrate full stack capability with a basic shop design. I helped lead this group and really enjoyed design a kawaii aesthetic.
+              </p>
+            </div>
+            <div>
+              <h4 className="mb-4">Food to the Mood</h4>
+              <Image className="mb-4" src={foodToMood} />
+              <p className="mb-4">
+                This application is my first group collaboration to create a full stack Python application. We had to learn Django, Python, and PostgresSQL. Learning Python was a great way to see differences in programming languages and compatability within web development. Overall learning a SQL database was my favorite new skill I gained from this project.
+              </p>
+            </div>
+          </div>
+        </section>
+        <footer></footer>
       </main>
     </div>
   );
