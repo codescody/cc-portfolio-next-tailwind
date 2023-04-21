@@ -49,15 +49,8 @@ export default function Home() {
             <h3 className="text-2xl py-2 text-gray-100">
               React and Next.js Software Developer
             </h3>
-            <p className="text-md w-6/12 py-5 leading-8 text-gray-100">
-              Hi I'm Cody Clark a Software Developer and Photographer. After
-              years of professional travel and portrait photography experience I
-              turned my focus toward building polished and practical
-              applications. I am committed to learning and consistently striving
-              for collaboration, efficiency, scalability, and maintainability.
-              These are the frameworks I am currently using MongoDB,
-              PostgresSQL, Express, Next.js, React, Node.js, Python, Javascript,
-              and Tailwind.
+            <p className="text-base w-6/12 py-5 leading-8 text-gray-100">
+              Hi I'm Cody Clark a Software Developer and Photographer. I have been a tech enthusiast by whole life and developing practical and polished applications has quickly become a focal point of my life.
             </p>
           </div>
           <div className="flex justify-center items-center gap-8 py-3 text-slate-900 text-4xl mb-10">
@@ -90,7 +83,7 @@ export default function Home() {
         <section className="h-fit p-2">
           <div className="mb-10">
             <h2 className="block text-2xl mb-10">Languages and Frameworks</h2>
-            <div className="flex gap-5 flex-wrap">
+            <div className="flex justify-center items-center text-center gap-5 flex-wrap">
               <div>
                 <p className="text-sm text-center items-center">Javascript</p>
                 <img
@@ -181,7 +174,7 @@ export default function Home() {
             <h2 className="inline-flex text-2xl mb-10">
               Skills and Applications
             </h2>
-            <div className="flex gap-5 flex-wrap">
+            <div className="flex justify-center items-center text-center gap-5 flex-wrap">
               <div>
                 <p className="text-sm text-center w-20">VS Code</p>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
@@ -275,13 +268,15 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="h-fit p-8">
-            <h2 className="flex justify-center align items-center text-left text-3xl mb-10">
+          <div className="h-fit p-4">
+            <h2 className="text-3xl mb-10">
               Projects
             </h2>
             <div>
+            <a href="https://cc-photography.netlify.app/" target="_blank">
               <h4 className="mb-4">Cody Clark Photography</h4>
               <Image className="mb-4" src={ccPhoto} />
+              </a>
               <p className="mb-4">
                 This is a full stack application I created as a way to showcase
                 some of my favorite photography work. I used React, MongoDB
@@ -292,22 +287,42 @@ export default function Home() {
               </p>
             </div>
             <div>
+            <a href="https://astounding-profiterole-75ffbe.netlify.app/" target="_blank">
               <h4 className="mb-4">Snowpad</h4>
               <Image className="mb-4" src={snowpad} />
+              </a>
               <p className="mb-4">
-                Snowpad is my first time working with a group of developers. We decided to find an interesting thing to sell that was fun and unique. We wanted to demonstrate full stack capability with a basic shop design. I helped lead this group and really enjoyed design a kawaii aesthetic.
+                Snowpad is my first time working with a group of developers. We
+                decided to find an interesting thing to sell that was fun and
+                unique. We wanted to demonstrate full stack capability with a
+                basic shop design. I helped lead this group and really enjoyed
+                design a kawaii aesthetic.
               </p>
             </div>
             <div>
+              <a href="https://main--food-to-the-mood.netlify.app/" target="_blank">
               <h4 className="mb-4">Food to the Mood</h4>
               <Image className="mb-4" src={foodToMood} />
+              </a>
               <p className="mb-4">
-                This application is my first group collaboration to create a full stack Python application. We had to learn Django, Python, and PostgresSQL. Learning Python was a great way to see differences in programming languages and compatability within web development. Overall learning a SQL database was my favorite new skill I gained from this project.
+                This application is my first group collaboration to create a
+                full stack Python application. We had to learn Django, Python,
+                and PostgresSQL. Learning Python was a great way to see
+                differences in programming languages and compatability within
+                web development. Overall learning a SQL database was my favorite
+                new skill I gained from this project.
               </p>
+              
             </div>
           </div>
         </section>
-        <footer></footer>
+        <footer>
+        <nav className="py-10 px-20 mb-2 flex justify-between">
+          <div className="font-thin">©Copyright Cody Clark</div>
+          <div>Contact Me: <a href="mailto:example123@example.com">Email Here</a></div>
+          <a className="text-xs" href="https://www.flaticon.com/free-icons/coding" title="coding icon">Coding icon created by Kiranshastry - Flaticon</a>
+        </nav>
+        </footer>
       </main>
     </div>
   );
